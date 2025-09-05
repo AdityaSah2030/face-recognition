@@ -1,0 +1,64 @@
+# -------------------------------
+# Core Dependencies for Face Recognition Project
+# -------------------------------
+
+# Face detection and recognition library
+face-recognition>=1.3.0          
+# Pre-trained models required by face-recognition (auto-installed with face-recognition)
+# face-recognition-models>=0.3.0   # Commented out - installed automatically
+# Core machine learning toolkit - INSTALL VIA CONDA: conda install -c conda-forge dlib
+# dlib>=19.22.0                   # Commented out - install via conda instead
+# Numerical computations (matrix operations, linear algebra)
+numpy>=1.19.5                    # Updated to more stable version
+# Image processing (opening, editing, converting images)
+Pillow>=8.3.2                    # Updated for security fixes
+# Computer vision library (image/video reading, processing)
+opencv-python>=4.5.0             # Updated version
+
+# -------------------------------
+# Video and Media Handling
+# -------------------------------
+
+# Python library for video editing (cuts, concatenation, effects)
+moviepy>=1.0.3                   
+# Provides FFMPEG support for moviepy (handling video/audio codecs)
+imageio-ffmpeg>=0.4.5            # Updated version
+# Image input/output library (reading/writing different image formats)
+imageio>=2.13.0                  # Updated version
+# Progress bar for long-running tasks (used in moviepy, training, etc.)
+tqdm>=4.62.0                     # Updated version
+# Logging utility for moviepy (displays progress & debugging info)
+proglog>=0.1.10                  # Updated version
+
+# -------------------------------
+# Utility Libraries
+# -------------------------------
+
+# Command-line utility helper
+click>=8.0.0                     # Updated version
+# Function decorator utilities
+decorator>=5.1.0                 # Updated version
+
+# -------------------------------
+# Networking / Requests
+# -------------------------------
+
+# HTTP requests made simple
+requests>=2.28.0                 # Updated for security
+# Support library for handling internationalized domain names
+idna>=3.3                        # Updated version
+# URL handling and connection pooling
+urllib3>=1.26.12                 # Updated for security
+# Character encoding detection (used by requests)
+chardet>=5.0.0                   # Updated version
+# Root certificates for HTTPS validation
+certifi>=2022.12.7               # Updated version
+# Windows-specific certificate handling (only needed on Windows)
+wincertstore>=0.2; sys_platform == "win32"
+
+# -------------------------------
+# Build Tools (Removed problematic cmake)
+# -------------------------------
+
+# CMake removed - dlib should be installed via conda to avoid compilation issues
+# cmake>=3.18.2                  # Commented out - not needed when using conda dlib
