@@ -303,19 +303,19 @@ print("✓ Attendance system closed successfully")
 """
 The attendance.json file will contain:
 {
-  "recognizedStudents": [
-    {
-      "rollNo": "151751515151515",
-      "timestamp": "2025-09-05T15:30:10Z"
-    },
-    {
-      "rollNo": "151751515151516",
-      "timestamp": "2025-09-05T15:30:12Z"
-    },
-    {
-      "rollNo": "151751515151517",
-      "timestamp": "2025-09-05T15:30:15Z"
-    }
-  ]
+    "recognizedStudents": [
+        {
+            "rollNo": "151751515151515",
+            "timestamp": "2025-09-05T15:30:10Z"
+        },
+        {
+            "rollNo": "151751515151516",
+            "timestamp": "2025-09-05T15:30:12Z"
+        },
+        {
+            "rollNo": "151751515151517",
+            "timestamp": "2025-09-05T15:30:15Z"
+        }
+    ]
 }
 """
